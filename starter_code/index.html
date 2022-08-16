@@ -17,8 +17,12 @@
   </head>
 
   <body>
-    <nav>
+    <!-- slack icon and hamburger menu are in nav-small-->
+    <nav id="nav-small">
       <img src="./images/slack-logo.png" alt="slack_logo" />
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
       <ul>
         <li>Why Slack?</li>
         <li>Pricing</li>
@@ -26,7 +30,8 @@
         <li>Your Workspaces</li>
       </ul>
     </nav>
-    <header>
+
+    <header class="header">
       <img src="./images/home_talking.png" alt="home_work_happening" />
       <h1>Where Work Happens</h1>
       <p>
@@ -35,34 +40,45 @@
         an A/B test, plan your next office opening, and more, Slack has you
         covered.
       </p>
-      <button type="button" name="button">GET STARTED</button>
-      <p>Already using Slack? <a href="#">Sign in</a></p>
+      <div class="sign-up-form-container">
+      <input type="text" placeholder="Email address">
+      <button class="button-purple" type="button" name="button">GET STARTED</button>
+     </div>
+      <p id="sign-in">Already using Slack? <a href="#">Sign in</a></p>
     </header>
     <main>
-      <div>
+      <div id= "partners-container" class="highlight-background">
         <h2>You're in good company</h2>
         <p>
           Millions of people around the world have already made Slack the place
           where their work happens.
         </p>
-        <button>DISCOVER WHY</button>
-        <img src="./images/airbnb-logo.png" alt="" />
-        <img src="./images/capital-one-logo.png" alt="" />
-        <img src="./images/harvard-logo.png" alt="" />
-        <img src="./images/los-angeles-times-logo.png" alt="" />
-        <img src="./images/oracle-logo.png" alt="" />
-        <img src="./images/ticketmaster-logo.png" alt="" />
+        <button class = "button-white">DISCOVER WHY</button>
+      <div id="partners">
+        <div id="first-column-partners">
+        <img  src="./images/airbnb-logo.png" alt="" />
+        <img  src="./images/capital-one-logo.png" alt="" />
+        <img  src="./images/harvard-logo.png" alt="" />
       </div>
-      <div>
+        <div id="second-column-partners">
+        <img  src="./images/los-angeles-times-logo.png" alt="" />
+        <img  src="./images/oracle-logo.png" alt="" />
+        <img  src="./images/ticketmaster-logo.png" alt="" />
+      </div>
+      </div>
+      </div>
+      <div id="log-in">
         <p>Try it for free</p>
         <p>Already using Slack? <a href="">Sign in</a></p>
-        <button type="button" name="button">GET STARTED</button>
+        <input type="text" placeholder="Email address">
+        <button class="button-purple" type="button" name="button">GET STARTED</button>
       </div>
     </main>
     <footer>
-      <div>
         <img src="./images/iso-slack.png" alt="" />
-        <ul>
+        <div id="footer-container">
+        <div id = "first-column-footer">
+          <ul>
           <li>COMPANY</li>
           <li>About Us</li>
           <li>Careers</li>
@@ -70,6 +86,7 @@
           <li>Press</li>
           <li>Brand Guidelines</li>
         </ul>
+        
         <ul>
           <li>PRODUCT</li>
           <li>Why Slack?</li>
@@ -78,6 +95,10 @@
           <li>Pricing</li>
           <li>Security</li>
         </ul>
+
+      </div>
+
+      <div id="second-column-footer">
         <ul>
           <li>RESOURCES</li>
           <li>Download</li>
@@ -95,15 +116,18 @@
           <li>Slack Fund</li>
         </ul>
       </div>
-      <div>
+      </div>
+      <div id="contact-bar-container" class="highlight-background">
         <ul>
-          <li>Status</li>
-          <li>Privacy & Terms</li>
-          <li>Contact Us</li>
-        </ul>
+          <li>Status </li>
+          <li>Privacy & Terms </li>
+          <li>Contact Us </li>
+        <ul>
         <div>
-          <img src="./images/us-flag.png" alt="" />
+          <img id="flag" src="./images/us-flag.png" alt="" />
           <span>English (US)</span>
+          </div>
+        <div>
           <i class="fas fa-chevron-down"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-facebook-f"></i>
